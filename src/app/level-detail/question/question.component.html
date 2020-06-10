@@ -1,0 +1,12 @@
+<div id="question">
+  <p>{{ question.en }}</p>
+  <div id="choices">
+    <div
+      class="choice"
+      *ngFor="let choice of choices"
+      (click)="onClickAnswer(choice)"
+    >
+      {{ choice }}
+    </div>
+  </div>
+</div>

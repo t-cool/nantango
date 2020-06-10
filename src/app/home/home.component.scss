@@ -1,0 +1,49 @@
+#container {
+  margin: 20px auto;
+  background-color: white;
+  height: 550px;
+  width: 800px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px 0px;
+  position: relative;
+}
+
+#start {
+  font-size: 80px;
+  padding-top: 30px;
+  font-weight: bolder;
+  word-break: break-all;
+  margin: auto;
+  width: 700px;
+  height: 150px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  color: lightgrey;
+  margin-bottom: 40px;
+}
+#start:hover {
+  color: #e23a6e;
+}
+
+.clear {
+  clear: both;
+}
+
+.level {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: lightgrey;
+  margin: 10px;
+  margin-left: 20px;
+  float: left;
+  cursor: pointer;
+}
+.level:hover {
+  background-color: #e23a6e;
+  color: white;
+}

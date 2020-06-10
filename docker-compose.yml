@@ -1,0 +1,8 @@
+version: "3.6"
+services:
+  app:
+    image: nginx
+    volumes:
+      - ./dist/:/usr/share/nginx/html/
+    ports:
+      - "8080:80"

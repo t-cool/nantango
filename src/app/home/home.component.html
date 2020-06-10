@@ -1,0 +1,12 @@
+<div id="container">
+  <div id="start">なんたんご</div>
+  <div>
+    <div
+      class="level"
+      *ngFor="let level of levels"
+      (click)="onClickLevel(level)"
+    >
+      {{ level }}
+    </div>
+  </div>
+</div>

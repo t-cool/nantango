@@ -1,0 +1,20 @@
+<div id="container">
+  <app-question
+    [question]="question"
+    [choices]="choices"
+    (nextQuestion)="onNextQuestion()"
+  >
+  </app-question>
+  <div class="process-container">
+    <p>
+      <ngb-progressbar
+        type="danger"
+        [value]="valueProcessBar"
+        [striped]="true"
+        [animated]="true"
+        height="10px"
+      ></ngb-progressbar>
+    </p>
+    <div class="process-number"> Progess {{ valueProcessBar }} %</div>
+  </div>
+</div>

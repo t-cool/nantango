@@ -1,0 +1,22 @@
+<div class="result-wrapper">
+  <div>
+    <div>
+      <h1>英単語補強プリント</h1>
+      <p class="result-time"> 日時： <span>{{ time }}</span> </p>
+      <p>名前：<input type="text" /></p>
+      <p><button (click)="onClickPrint()">印刷</button></p>
+    </div>
+  </div>
+  <div *ngIf="answersIncorrect.length > 0">
+    <div *ngFor="let answer of answersIncorrect" id="review">
+      <div class="sentence">
+        <div class="word_en">{{ answer.en }}</div>
+        <div class="word_ja">{{ answer.meanings[1] }}</div>
+        <div class="word_sound">{{ answer.meanings[0] }}</div>
+      </div>
+    </div>
+  </div>
+  <h3 *ngIf="answersIncorrect.length === 0" class="success-message">
+    Congratulations, you are super!
+  </h3>
+</div>
