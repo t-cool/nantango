@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "deploy:githubPage": "angular-cli-ghpages — dir=dist",
+    "build:github": "ng build --base-href=/nantango/",
+    "deploy:github": "npm run build:github &&  angular-cli-ghpages",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
