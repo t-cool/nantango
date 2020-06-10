@@ -5,6 +5,7 @@
     "ng": "ng",
     "build:github": "ng build --base-href=/nantango/",
     "deploy:github": "npm run build:github &&  angular-cli-ghpages",
+    "deploy:docker": "ng build && docker-compose up -d",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",

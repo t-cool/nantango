@@ -1,13 +1,11 @@
-# To Run The App
+# To Run The App with Docker
 
 ```
-npm install
-npm build
-docker-compose up -d
+yarn deploy:docker
 ```
 
 # To Deploy To GitHub Page
 
 ```
-npm run deploy:github
+yarn deploy:github
 ```
