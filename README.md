@@ -4,7 +4,7 @@
 
 | Top | Quiz | Result |
 |:---:|:---:|:---:|
-|![](screenshots/top.png)|![](screenshots/quiz.png)|![](screenshots/result.png)|
+|![](screenshots/top.png)|![](screenshots/quiz.png)|![](screenshots/print.png)|
 
 
 ## Start the application server
