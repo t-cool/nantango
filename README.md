@@ -7,28 +7,19 @@
 |![](screenshots/top.png)|![](screenshots/quiz.png)|![](screenshots/result.png)|
 
 
-## Setting up
-
-```bash
-$ git clone git@github.com:t-cool/nantango.git
-$ cd nantango
-$ npm install
-```
-
-## Start the app
+## Start the application server
 
 ```bash
 $ npm run start
 ```
 
-## Build the app
+## Build and deploy the app
 
 ```bash
-$ npm run build
+$ npx ng run app:build:production --base-href "https://gdg-nara.github.io/nantango/"
+$ npx angular-cli-ghpages --dir=dist
 ```
-
-Then the app will be published in `docs` folder.
 
 ## License
 
-[The GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
+MIT

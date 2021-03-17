@@ -1,6 +1,6 @@
 {
-  "name": "quizz-app",
-  "version": "0.0.0",
+  "name": "nantango",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "build:github": "ng build --base-href=/nantango/",

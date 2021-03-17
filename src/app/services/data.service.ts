@@ -6,7 +6,7 @@ export interface IQuestion {
   en: string;
   meanings: string[];
 }
-const QUESTION_NUMBER_PER_LEVEL = 50;
+const QUESTION_NUMBER_PER_LEVEL = 30;
 
 @Injectable({
   providedIn: 'root',

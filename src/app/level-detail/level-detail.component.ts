@@ -23,7 +23,7 @@ interface IQuestion {
 export class LevelDetailComponent implements OnInit {
   private questions = [];
   private totalChoices = [];
-  QUESTION_NUMBER_PER_LEVEL = 50;
+  QUESTION_NUMBER_PER_LEVEL = 30;
   choices = [];
   currentIndex = 0;
   question: IQuestion = null;
