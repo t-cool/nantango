@@ -47,18 +47,12 @@
   right: 0;
   top: 120px;
   margin-top: 5px;
-
-  /*
-    font-size: 23px;
-    width : 80%;
-    position: absolute;
-    right : 0;
-    top : 100px;
-    padding : 10px
-    */
 }
 .choice {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 90%;
   height: 100px;
   text-align: center;
