@@ -14,7 +14,7 @@ export class ResultComponent implements OnInit {
   ngOnInit(): void {
     const now = new Date();
     this.answersIncorrect = this.dataService.getAnswersIncorrect();
-    this.time = `${now.getFullYear()}年${now.getMonth() + 1}月${now.getDate()}日`;
+    this.time = `${now.getFullYear()}/${now.getMonth() + 1}/${now.getDate()}`;
   }
 
   onClickPrint() {

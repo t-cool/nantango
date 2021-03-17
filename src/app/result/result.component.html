@@ -1,18 +1,25 @@
 <div class="result-wrapper">
+<!--
   <div>
-    <div>
-      <h1>英単語補強プリント</h1>
-      <p class="result-time"> 日時： <span>{{ time }}</span> </p>
-      <p>名前：<input type="text" /></p>
-      <p><button (click)="onClickPrint()">印刷</button></p>
+    <p class="result-time"> <span>{{ time }}</span>　name: <input type="text" />
+  </div>
+-->
+
+  <div class="record">
+    <div class="word_en">{{ time }}</div>
+    <div class="word_ja">
+      <input type="text" placeholder="名前を記入してください"
+      onkeyup="this.style.backgroundColor=''===this.value?'yellow':'white';"
+      />
+      <button (click)="onClickPrint()">印刷</button>
     </div>
   </div>
+  <p></p>
   <div *ngIf="answersIncorrect.length > 0">
     <div *ngFor="let answer of answersIncorrect" id="review">
-      <div class="sentence">
+      <div class="record">
         <div class="word_en">{{ answer.en }}</div>
         <div class="word_ja">{{ answer.meanings[1] }}</div>
-        <div class="word_sound">{{ answer.meanings[0] }}</div>
       </div>
     </div>
   </div>
