@@ -20,6 +20,11 @@ $ npx ng run app:build:production --base-href "https://gdg-nara.github.io/nantan
 $ npx angular-cli-ghpages --dir=dist
 ```
 
+## Demo
+
+[https://gdg-nara.github.io/nantango/](https://gdg-nara.github.io/nantango/)
+
+
 ## License
 
 MIT
