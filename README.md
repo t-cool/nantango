@@ -16,7 +16,7 @@ $ npm run start
 ## Build and deploy the app
 
 ```bash
-$ npx ng run app:build:production --base-href "https://gdg-nara.github.io/nantango/"
+$ npx ng build --prod --base-href "https://gdg-nara.github.io/nantango/"
 $ npx angular-cli-ghpages --dir=dist
 ```
 
