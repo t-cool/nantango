@@ -5,11 +5,9 @@
 
 input {
   border: none;
-  border-bottom: 1px solid lightgray;
-  padding-bottom: 3px;
   outline: none;
   font-size: 20px;
-  width: 80%;
+  width: 70%;
   background-color: yellow;
 }
 
@@ -57,7 +55,7 @@ button {
 }
 
 .word_en {
-  font-size: 35px;
+  font-size: 2vw;
   width: 50%;
   height: 35px;
   flex-shrink: 1;
@@ -70,7 +68,7 @@ button {
 }
 
 .word_ja{
-  font-size: 25px;
+  font-size: 2vw;
   width: 50%;
   height: 30px;
   flex-shrink: 1;
