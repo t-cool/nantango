@@ -23,6 +23,7 @@ interface IQuestion {
 export class LevelDetailComponent implements OnInit {
   private questions = [];
   private totalChoices = [];
+  // この問題数
   QUESTION_NUMBER_PER_LEVEL = 30;
   choices = [];
   currentIndex = 0;
@@ -56,9 +57,18 @@ export class LevelDetailComponent implements OnInit {
   }
 
   onNextQuestion() {
-    if (this.currentIndex >= this.QUESTION_NUMBER_PER_LEVEL - 1) {
+    // 間違えた問題が 7 個になったら結果画面にいく
+    if (this.dataService.getAnswersIncorrect().length > 6) {
       return this.router.navigate(['result'], { skipLocationChange: true });
     }
+
+    // 上限の問題数をこなしたら結果画面に進む
+    // （確認作業を3分で完結できる量にするため）
+    if(this.currentIndex >= this.QUESTION_NUMBER_PER_LEVEL - 1){
+      return this.router.navigate(['result'], { skipLocationChange: true });
+    }
+
+
     this.currentIndex = this.currentIndex + 1;
     this.question = this.questions[this.currentIndex];
     voice.playText(this.question.en);
