@@ -6,7 +6,7 @@ Learning app to write down 5 English words you haven't remembered
 
 | Top | Quiz | Result |
 |:---:|:---:|:---:|
-|![](screenshots/top.png)|![](screenshots/quiz.png)|![](screenshots/result2.png)|
+|![](screenshots/top.png)|![](screenshots/quiz.png)|![](screenshots/result.png)|
 
 
 ## Start the application server
