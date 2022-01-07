@@ -24,7 +24,7 @@ npx angular-cli-ghpages --dir=dist
 
 ## Demo
 
-[https://gdg-nara.github.io/nantango/](https://gdg-nara.github.io/nantango/)
+[https://t-cool.github.io/nantango](https://t-cool.github.io/nantango)
 
 
 ## License
