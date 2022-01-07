@@ -1,10 +1,12 @@
 # Nantango
 
+Learning app to write down 5 English words you haven't remembered
+
 ## Screens
 
 | Top | Quiz | Result |
 |:---:|:---:|:---:|
-|![](screenshots/top.png)|![](screenshots/quiz.png)|![](screenshots/print.png)|
+|![](screenshots/top.png)|![](screenshots/quiz.png)|![](screenshots/result2.png)|
 
 
 ## Start the application server

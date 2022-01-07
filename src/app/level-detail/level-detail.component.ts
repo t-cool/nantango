@@ -58,7 +58,7 @@ export class LevelDetailComponent implements OnInit {
 
   onNextQuestion() {
     // 間違えた問題が 7 個になったら結果画面にいく
-    if (this.dataService.getAnswersIncorrect().length > 6) {
+    if (this.dataService.getAnswersIncorrect().length > 4) {
       return this.router.navigate(['result'], { skipLocationChange: true });
     }
 
