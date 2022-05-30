@@ -1,6 +1,6 @@
 # Nantango
 
-Learning app to write down 5 English words you haven't remembered
+Learning app to write down 8 English words you haven't remembered
 
 ## Screens
 
