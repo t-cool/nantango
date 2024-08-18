@@ -24,7 +24,7 @@ export class LevelDetailComponent implements OnInit {
   private questions = [];
   private totalChoices = [];
   // 問題数
-  QUESTION_NUMBER_PER_LEVEL = 30;
+  QUESTION_NUMBER_PER_LEVEL = 20;
   choices = [];
   currentIndex = 0;
   question: IQuestion = null;
