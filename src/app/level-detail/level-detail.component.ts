@@ -6,7 +6,7 @@ import { DataService } from '../services/data.service';
 
 const talkify = (window as any).talkify;
 const voice = new talkify.Html5Player();
-voice.forceLanguage('en');
+voice.forceLanguage('en-US');
 voice.setRate(1);
 
 interface IQuestion {
@@ -35,7 +35,7 @@ export class LevelDetailComponent implements OnInit {
   ngOnInit(): void {
     this.questions = this.dataService.getQuestions();
     this.question = this.questions[this.currentIndex];
-    voice.playText(this.question.en);
+    voice.playText(this.question.en, { language: 'en-US' });
     this.totalChoices = this.dataService.getTotalChoices();
     this.choices = this.getChoices();
   }
@@ -70,7 +70,7 @@ export class LevelDetailComponent implements OnInit {
 
     this.currentIndex = this.currentIndex + 1;
     this.question = this.questions[this.currentIndex];
-    voice.playText(this.question.en);
+    voice.playText(this.question.en, { language: 'en-US' });
     this.choices = this.getChoices();
     this.valueProcessBar = Math.round(
       (this.currentIndex / this.QUESTION_NUMBER_PER_LEVEL) * 100
