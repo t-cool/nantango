@@ -25,10 +25,12 @@ export class LevelDetailComponent implements OnInit {
   private totalChoices = [];
   // 問題数
   QUESTION_NUMBER_PER_LEVEL = 20;
+  MAX_INCORRECT_ANSWERS = 8;
   choices = [];
   currentIndex = 0;
   question: IQuestion = null;
   valueProcessBar = 0;
+  incorrectAnswers = 0;
 
   constructor(private dataService: DataService, private router: Router) {}
 
@@ -57,8 +59,10 @@ export class LevelDetailComponent implements OnInit {
   }
 
   onNextQuestion() {
+    this.incorrectAnswers = this.dataService.getAnswersIncorrect().length;
+
     // 間違えた問題が 8 個になったら結果画面にいく
-    if (this.dataService.getAnswersIncorrect().length > 7) {
+    if (this.incorrectAnswers >= this.MAX_INCORRECT_ANSWERS) {
       return this.router.navigate(['result'], { skipLocationChange: true });
     }
 
